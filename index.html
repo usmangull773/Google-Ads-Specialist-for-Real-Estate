@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real Estate Google Ads Plan — Barlowe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a1a2e; --navy2:#252542; --ink:#22222c; --ink2:#3a3a48; --mut:#6a6a78; --soft:#9a9aa6;
+    --bg:#f7f6f2; --card:#ffffff; --cream:#f0ede4; --line:#e8e4d9; --line2:#ded8c8;
+    --gold:#c8a45c; --gold2:#a9863f; --goldSoft:#f5efe1; --grn:#3f7a5a;
+    --maxw:860px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink2);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;font-size:14.5px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.15;letter-spacing:-.3px}
+
+  header.top{background:var(--navy);color:#fff}
+  .top-in{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 22px;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap}
+  .top .b{display:flex;align-items:center;gap:9px;font-weight:800;font-size:15px;color:#fff;letter-spacing:.2px}
+  .top .dot{width:9px;height:9px;border-radius:50%;background:var(--gold)}
+  .top .m{font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:#b9b6c8}
+
+  .hero{padding:48px 0 26px}
+  .eyebrow{display:inline-block;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);font-weight:700}
+  h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.4vw,42px);font-weight:700;margin:14px 0 0;max-width:20ch;letter-spacing:0}
+  h1 .u{color:var(--gold2)}
+  .hero p{color:var(--mut);font-size:15px;max-width:60ch;margin-top:13px}
+
+  section{padding:26px 0;border-top:1px solid var(--line)}
+  .kick{font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold2);font-weight:700}
+  h2{font-size:clamp(19px,2.7vw,24px);margin:7px 0 3px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .c{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px 16px}
+  .c .tag{font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--gold2);background:var(--goldSoft);border-radius:6px;padding:3px 9px;display:inline-block}
+  .c b{display:block;color:var(--ink);font-size:14.5px;font-weight:700;margin:8px 0 4px}
+  .c p{color:var(--mut);font-size:13px}
+  .c .kw{margin-top:7px;font-size:12px;color:var(--ink2)}
+  .c .kw span{background:var(--cream);border:1px solid var(--line2);border-radius:6px;padding:2px 7px;margin:0 4px 4px 0;display:inline-block}
+
+  .flow{margin-top:16px;background:var(--navy);color:#fff;border-radius:14px;padding:16px 18px}
+  .flow .t{font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .flow .steps{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px;font-weight:600;font-size:12.8px}
+  .flow .step{background:var(--navy2);border:1px solid #33335a;border-radius:9px;padding:8px 12px}
+  .flow .arr{color:var(--gold);font-weight:800}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+  @media(max-width:640px){.split{grid-template-columns:1fr}}
+  .s{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px 16px}
+  .s .h{display:flex;align-items:center;gap:8px}
+  .s .badge{font-size:10px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:3px 9px;border-radius:6px}
+  .s.sell .badge{background:var(--goldSoft);color:var(--gold2)} .s.buy .badge{background:#eaf1ee;color:var(--grn)}
+  .s b{color:var(--ink);font-weight:700;font-size:14px}
+  .s p{color:var(--mut);font-size:12.8px;margin-top:5px}
+
+  .close{margin:24px 0;background:var(--navy);color:#fff;border-radius:16px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .close h3{color:#fff;font-size:18px;font-weight:700}
+  .close p{color:#c7c5d6;font-size:13px;margin-top:4px;max-width:46ch}
+  .close .r{font-weight:800;font-size:14px;background:var(--gold);color:var(--navy);border-radius:11px;padding:11px 17px;white-space:nowrap}
+  .note{font-size:11.5px;color:var(--soft);margin-top:12px;max-width:74ch}
+  footer{padding:16px 0 34px;color:var(--soft);font-size:11px;text-align:center}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in"><div class="b"><span class="dot"></span>Barlowe · Real Estate</div><span class="m">Google Ads Lead Plan</span></div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero" style="border-top:none">
+    <span class="eyebrow">Prepared for Andrew</span>
+    <h1>More qualified buyer and seller leads, <span class="u">into your CRM</span>.</h1>
+    <p>Not just clicks and traffic, but real buyer and seller enquiries flowing into your Lofty pipeline at a cost per lead you control. Here is how I would build and run it.</p>
+  </section>
+
+  <section>
+    <span class="kick">Keyword research</span>
+    <h2>Reaching people ready to move, not browsers</h2>
+    <div class="grid">
+      <div class="c"><span class="tag">Sellers · high value</span><b>Listing intent</b><p>The most valuable leads. People checking what their home is worth or ready to sell.</p><div class="kw"><span>sell my house San Antonio</span><span>home value San Antonio</span><span>what is my home worth</span></div></div>
+      <div class="c"><span class="tag">Buyers · volume</span><b>Purchase intent</b><p>Active buyers searching your market and neighborhoods by name and price.</p><div class="kw"><span>homes for sale San Antonio</span><span>San Antonio realtor</span><span>your target neighborhoods</span></div></div>
+    </div>
+    <p class="note">Plus a tight negative-keyword list from day one, so budget never leaks on renters, job seekers, "free," or idle browsing.</p>
+  </section>
+
+  <section>
+    <span class="kick">Ad copy that converts</span>
+    <h2>The right message for each searcher</h2>
+    <div class="split">
+      <div class="s sell"><div class="h"><span class="badge">Seller</span></div><b>Lead with a free home valuation</b><p>The strongest seller hook, paired with your local track record, so the click turns into a valuation request.</p></div>
+      <div class="s buy"><div class="h"><span class="badge">Buyer</span></div><b>Lead with local expertise and listings</b><p>Neighborhood specific, price-aware copy that offers a real next step, a tour or a buyer consult.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="kick">Leads &amp; tracking</span>
+    <h2>Every lead captured, counted, and in your pipeline</h2>
+    <div class="flow">
+      <div class="t">How a lead flows</div>
+      <div class="steps"><span class="step">High-intent search</span><span class="arr">&rarr;</span><span class="step">Matched ad</span><span class="arr">&rarr;</span><span class="step">Landing page / call</span><span class="arr">&rarr;</span><span class="step">Lofty CRM</span></div>
+    </div>
+    <p class="note" style="margin-top:11px">Calls and form leads tracked as conversions and passed into Lofty, so you see exactly which keywords and areas produce real enquiries, and speed-to-lead stays fast.</p>
+  </section>
+
+  <section>
+    <span class="kick">Performance analysis</span>
+    <h2>Optimised on cost per lead, every week</h2>
+    <p style="color:var(--mut);font-size:14px;max-width:72ch">Each week I read what is working at the keyword and area level, cut the waste, and put budget behind the searches producing real buyer and seller leads. You get a clear read: leads, cost per lead, and what changes next.</p>
+  </section>
+
+  <div class="close">
+    <div class="l"><h3>Start with a free audit</h3><p>Give me a look at the account and I will show you where the fastest, cheapest leads are, before we commit.</p></div>
+    <div class="r">Free audit</div>
+  </div>
+
+  <p class="note">Based on your public site and platform. No invented figures. Exact keywords, areas and priorities confirmed with you and inside the account.</p>
+
+  <footer>Real estate Google Ads · Buyer &amp; seller leads · Local intent · Lofty CRM · Cost-per-lead focus · Prepared for Barlowe</footer>
+
+</div>
+</body>
+</html>
